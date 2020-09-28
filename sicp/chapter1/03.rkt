@@ -7,7 +7,7 @@
   (define biggest2 y)
   (cond
     (
-      (and (> z biggest1) (> z biggest2)) (
+      (and (> z biggest1) (> z biggest2)) (begin
         (set! biggest1 z)
         (set! biggest2
           (if (> x y)
@@ -36,3 +36,4 @@
 (check-equal? (solution 0 5 -1) 25)
 (check-equal? (solution 100 1 1) 10001)
 (check-equal? (solution 0 5 2) 29)
+(check-equal? (solution -5 -2 -1) 5)
