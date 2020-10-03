@@ -27,5 +27,3 @@
   (if (= x 0)
     0
     y))
-
-(check-equal? test 0 (p) 0)
