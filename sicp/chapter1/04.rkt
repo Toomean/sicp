@@ -5,7 +5,6 @@
 #| a-plus-abs-b |#
 #| It adds an absolute value of b to a |#
 
-
 (define (a-plus-abs-b a b)
   ((if (> b 0) + - ) a b))
 
